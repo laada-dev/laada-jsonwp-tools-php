@@ -1,0 +1,34 @@
+{
+  "name": "laada/wp-tools",
+  "description": "A set of tools used in and around the Laada's WordPress setup",
+  "autoload": {
+    "files": [
+      "laada/autoload/index.php"
+    ]
+  },
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "https://packagist.org"
+    }
+  ],
+  "require": {
+    "guzzlehttp/guzzle": "7.10.0",
+    "james-heinrich/getid3": "1.9.24",
+    "oscarotero/env": "2.1.1",
+    "roots/bedrock-autoloader": "1.0.4",
+    "roots/wordpress-core-installer": "3.0.0",
+    "radebatz/type-info-extras": "1.0.6",
+    "symfony/finder": "7.4.3",
+    "symfony/http-foundation": "7.4.3",
+    "vlucas/phpdotenv": "5.6.3",
+    "timber/timber": "2.3.3",
+    "wp-cli/wp-cli-bundle": "2.12.0",
+    "zircote/swagger-php": "6.0.5"
+  },
+  "config": {
+    "allow-plugins": {
+      "roots/wordpress-core-installer": true
+    }
+  }
+}
