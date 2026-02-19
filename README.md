@@ -1,1 +1,1 @@
-# laada-wp-tools
+# laada-jsonwp-tools-php

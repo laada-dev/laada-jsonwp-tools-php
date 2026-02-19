@@ -1,0 +1,18 @@
+{
+  "files.associations": {
+    "*.noformat.php": "noformat"
+  },
+  "php-cs-fixer.executablePath": "${workspaceFolder}/bin/php-cs-fixer.sh",
+  "php-cs-fixer.config": ".php-cs-fixer.dist.php",
+  "php-cs-fixer.rules": "@PSR12",
+  "php-cs-fixer.onsave": true,
+  "php-cs-fixer.formatHtml": true,
+  "php-cs-fixer.allowRisky": true,
+  "php-cs-fixer.ignorePHPVersion": false,
+  "[php]": {
+    "editor.defaultFormatter": "junstyle.php-cs-fixer"
+  },
+  "[noformat]": {
+    "editor.formatOnSave": false
+  },
+}
