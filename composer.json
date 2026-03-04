@@ -12,10 +12,8 @@
       "url": "https://packagist.org"
     }
   ],
-  "require-dev": {
-    "friendsofphp/php-cs-fixer": "3.94.2"
-  },
   "require": {
+    "friendsofphp/php-cs-fixer": "3.94.2",
     "guzzlehttp/guzzle": "7.10.0",
     "james-heinrich/getid3": "1.9.24",
     "oscarotero/env": "2.1.1",
