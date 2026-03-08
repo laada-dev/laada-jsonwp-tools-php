@@ -7,21 +7,46 @@
     ]
   },
   "config": {
+    "platform": {
+      "php": "8.5"
+    },
     "allow-plugins": {
+      "composer/installers": true,
+      "ffraenz/private-composer-installer": true,
+      "phpro/grumphp": true,
       "roots/wordpress-core-installer": true
+    },
+    "optimize-autoloader": true,
+    "sort-packages": true
+  },
+  "extra": {
+    "grumphp": {
+      "disable-plugin": true
     }
   },
   "repositories": [
     {
       "type": "composer",
       "url": "https://packagist.org"
+    },
+    {
+      "type": "composer",
+      "url": "https://wpackagist.org",
+      "only": [
+        "wpackagist-plugin/*",
+        "wpackagist-theme/*"
+      ]
     }
   ],
   "require": {
+    "composer/installers": "2.3.0",
+    "ffraenz/private-composer-installer": "5.0.1",
     "friendsofphp/php-cs-fixer": "3.94.2",
     "guzzlehttp/guzzle": "7.10.0",
     "james-heinrich/getid3": "1.9.24",
     "oscarotero/env": "2.1.1",
+    "phpro/grumphp": "2.17.0",
+    "phpunit/phpunit": "13.0.5",
     "roots/bedrock-autoloader": "1.0.4",
     "roots/wordpress-core-installer": "3.0.0",
     "radebatz/type-info-extras": "1.0.7",

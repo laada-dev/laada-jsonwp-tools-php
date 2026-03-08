@@ -66,7 +66,6 @@ function laada_wp_config($root_dir)
 
     define('LAADA_DEV', env('LAADA_DEV'), false);
     define('LAADA_FRONTEND_URL', env('LAADA_FRONTEND_URL'));
-    define('LAADA_FRONTEND_URL', env('LAADA_FRONTEND_URL'));
     define('LAADA_FRONTEND_API_PATH', env('LAADA_FRONTEND_API_PATH'));
     define('LAADA_FRONTEND_PREVIEW_SECRET', env('LAADA_FRONTEND_PREVIEW_SECRET'));
     define('LAADA_INTERNAL_REQUEST_TIMEOUT', env('LAADA_INTERNAL_REQUEST_TIMEOUT', 60));
