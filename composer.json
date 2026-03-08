@@ -6,6 +6,11 @@
       "laada/autoload/index.php"
     ]
   },
+  "config": {
+    "allow-plugins": {
+      "roots/wordpress-core-installer": true
+    }
+  },
   "repositories": [
     {
       "type": "composer",
@@ -19,17 +24,12 @@
     "oscarotero/env": "2.1.1",
     "roots/bedrock-autoloader": "1.0.4",
     "roots/wordpress-core-installer": "3.0.0",
-    "radebatz/type-info-extras": "1.0.6",
+    "radebatz/type-info-extras": "1.0.7",
     "symfony/finder": "7.4.3",
     "symfony/http-foundation": "7.4.3",
     "vlucas/phpdotenv": "5.6.3",
     "timber/timber": "2.3.3",
     "wp-cli/wp-cli-bundle": "2.12.0",
     "zircote/swagger-php": "6.0.6"
-  },
-  "config": {
-    "allow-plugins": {
-      "roots/wordpress-core-installer": true
-    }
   }
 }
