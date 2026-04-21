@@ -12,6 +12,10 @@ function laada_wp_config($root_dir)
     define('LAADA_ROOT', $root_dir);
     define('LAADA_DOCUMENT_ROOT', $app_dir);
 
+    if (!defined('WP_CACHE')) {
+      define('WP_CACHE', env('WP_CACHE', false));
+    }
+
     define('WP_ENVIRONMENT_TYPE', env('WP_ENVIRONMENT_TYPE', 'local'));
     define('WP_THEME', env('WP_THEME', 'custom'));
     define('WP_ALLOW_MULTISITE', env('WP_ALLOW_MULTISITE', true));
@@ -28,7 +32,6 @@ function laada_wp_config($root_dir)
     define('WP_DEBUG_DISPLAY', env('WP_DEBUG_DISPLAY', false));
     define('WP_DEBUG_LOG', env('WP_DEBUG_LOG', false));
     define('WP_DEBUG', env('WP_DEBUG', false));
-    define('WP_CACHE', env('WP_CACHE', false));
 
     define('DB_HOST', env('DB_HOST'));
     define('DB_NAME', env('DB_NAME'));
