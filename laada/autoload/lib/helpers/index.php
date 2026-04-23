@@ -80,7 +80,7 @@ function laada_wp_config($root_dir)
     define('LAADA_FRONTEND_BASIC_AUTH_USER', env('LAADA_FRONTEND_BASIC_AUTH_USER'));
     define('LAADA_FRONTEND_BASIC_AUTH_PASSWORD', env('LAADA_FRONTEND_BASIC_AUTH_PASSWORD'));
 
-    define('LAADA_DEV', env('LAADA_DEV'), false);
+    define('LAADA_DEV', env('LAADA_DEV', false));
 
     define('LAADA_DOD_IST_USER', env('LAADA_DOD_IST_USER'));
     define('LAADA_BUCKET_URL', env('LAADA_BUCKET_URL'));
